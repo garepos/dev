@@ -37,12 +37,12 @@ def generate_random_intervals(n, low, high, interval_range):
     is the length of the `intervals` list and `interval_range` is the max range of each random intervals
     in the list.
     """
-        intervals = []
-        for _ in range(n):
-            start = random.randint(low, high - interval_range)
-            end = random.randint(start + 1, start + interval_range)
-            intervals.append([start, end])
-        return intervals
+    intervals = []
+    for _ in range(n):
+        start = random.randint(low, high - interval_range)
+        end = random.randint(start + 1, start + interval_range)
+        intervals.append([start, end])
+    return intervals
 
 
 
