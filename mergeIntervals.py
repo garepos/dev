@@ -32,6 +32,11 @@ class Solution:
         return merged
 
 def generate_random_intervals(n, low, high, interval_range):
+    """
+    This function creates intervals from random numbers between `low` and `high`, where `n`
+    is the length of the `intervals` list and `interval_range` is the max range of each random intervals
+    in the list.
+    """
         intervals = []
         for _ in range(n):
             start = random.randint(low, high - interval_range)
@@ -46,11 +51,3 @@ intervals = generate_random_intervals(6,0,30,5)
 print("Unmerged random intervals", intervals)
 s = Solution(intervals)
 print("overlap merged random intervals", s.mergeIntervals())
-
-
-
-
-
-             
-
-
